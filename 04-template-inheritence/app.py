@@ -5,17 +5,16 @@ app = Flask(__name__) # tthis is a constructore Double underscore  ==> magical f
 
 @app.route('/')
 def hello():
-    return render_template('hello.template.html') # this is not standard html, but jinja2 language
-
-@app.route('/about-me/<first_name>/<last_name>')
-def about_me(first_name, last_name):
-    return render_template('about.template.html'),
-        frame-first_name
-
+    return render_template('homepage.template.html') # this is not standard html, but jinja2 language
 
 @app.route('/author/<author_name>')
 def search_by_author(author_name):
     return render_template('author_search.template.html', aname-author_name) # (template file name, variable name)
+
+
+@app.route('/latest-news')
+def view_latest_news():
+    return render_template('latest_news.template.html')
 
 
 # "magic code" -- boilerplate -- # everything must go before this code
