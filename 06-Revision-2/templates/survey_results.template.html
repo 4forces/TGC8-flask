@@ -1,0 +1,15 @@
+{% extends 'layout.template.html' %}
+
+{% block title %} GoodHealth Pte. Ltd {% endblock %}
+
+{% block content %}
+<h1>Thank you for your participation</h1>
+
+<p>You have entered:</p>
+<ul>
+    <li>Name: {{full_name}}</li>
+    <li>Gender: {{gender}}</li>
+    <li>Symptoms: {{", ".join(symptoms)}}</li> <!-- converts a list to a string -->
+</ul
+
+{% endblock %}

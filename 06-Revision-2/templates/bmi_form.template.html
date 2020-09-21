@@ -1,0 +1,17 @@
+{% extends 'layout.template.html' %}
+
+{% block title %} GoodHealth Pte. Ltd {% endblock %}
+
+{% block content %}
+<h1 class="m-3">BMI Calculator</h1>
+<form method="POST">
+    <div>
+        <label class="form-label">Weight:</label>
+        <input type="text" class="form-control" name="weight"/>
+    </div>
+        <label class="form-label">Height:</label>
+        <input type="text" class="form-control" name="height"/>
+    <div>
+    <input class="m-3" type="submit"/>
+</form>
+{% endblock %}
