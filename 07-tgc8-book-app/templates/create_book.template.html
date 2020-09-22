@@ -1,0 +1,17 @@
+{% extends 'base.template.html' %}
+
+{% block content %}
+<form method="POST">
+    <div>
+        <label class="form-label">Title:</label>
+        <input type="text" class="form-control" name="title" placeholder="Enter title">
+    </div>
+    <div>
+    <div>
+        <label class="form-label">Author:</label>
+        <input type="text" class="form-control" name="author" placeholder="Enter author">
+    </div>
+    <input type="submit" class="btn btn-primary">
+</form>
+
+{% endblock %} 

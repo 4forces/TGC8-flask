@@ -1,0 +1,24 @@
+{% extends 'base.template.html' %}
+
+{%block content%}
+<ul>
+    {% for each_book in database %}
+    <li>{{each_book.title}} by {{each_book.author}}
+    {%endfor%}
+</ul>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+    </thead>
+    {% for each_book in database %}
+        <tr>
+            <td>{{each_book.title}}</td>
+            <td>{{each_book.author}}
+        </tr>
+    {% endfor %}
+</table>
+
+{%endblock%} 
